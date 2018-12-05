@@ -23,6 +23,10 @@
                     <li>@Html.ActionLink("Footmark", "Index", "Footmark")</li>
                     <li>@Html.ActionLink("Regist", "Index", "Regist")</li>
                     <li>@Html.ActionLink("Login", "Index", "Login")</li>
+                    @if (HttpContext.Current.Session["footmarkusername"] != null)
+                    {
+                        <li><a href="#">hello,@HttpContext.Current.Session["footmarkusername"].ToString()</a></li>
+                    }
                 </ul>
             </div>
         </div>
