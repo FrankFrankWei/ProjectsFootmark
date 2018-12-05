@@ -2,6 +2,7 @@
 项目日志记录，用于记录项目开发/维护周期中的修改
 
 TODO:
+0、footmark页面显示项目最近3个footmark
 1、footmark的编辑
 2、new footmark 改为弹窗，提交后刷新当前页面
 3、日期填写改为使用日期控件
