@@ -17,5 +17,12 @@ namespace Web
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
         }
+
+        protected void Application_Error()
+        {
+            Exception error = Server.GetLastError();
+            Response.Write("error");
+            //Response.Redirect("~/Views/Shared/Error.cshtml");
+        }
     }
 }

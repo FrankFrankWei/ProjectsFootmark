@@ -22,6 +22,6 @@ namespace Entity
         public int Day { get; set; }
         public int Hour { get; set; }
         public int Minute { get; set; }
-        public DateTime CreateTime { get; set; }
+        public DateTime MarkTime { get; set; }
     }
 }

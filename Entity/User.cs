@@ -19,7 +19,7 @@ namespace Entity
         public string Name { get; set; }
         public string NickName { get; set; }
         public string Password { get; set; }
-        public DateTime CrateTime { get; set; }
+        public DateTime CreateTime { get; set; }
         public bool Validity { get; set; }
     }
 }
