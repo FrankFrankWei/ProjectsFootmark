@@ -1,0 +1,20 @@
+﻿@model List<ViewModel.ProjectVM>
+@{
+    ViewBag.Title = "Footmark";
+}
+
+<h2>Footmark</h2>
+
+<a href="Footmark/AddProject" target="_blank">New Project</a>
+<br />
+<hr />
+
+<table class="table table-striped">
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td><a href="/Footmark/Details/@item.ID" target="_blank">@item.Name</a></td>
+            <td>@item.CreateTime</td>
+        </tr>
+    }
+</table>

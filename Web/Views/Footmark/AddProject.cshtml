@@ -1,0 +1,27 @@
+﻿
+@{
+    ViewBag.Title = "AddProject";
+}
+
+<h2>AddProject</h2>
+
+<br />
+<hr />
+
+<form class="form-horizontal" action="/footmark/doaddproject" method="post">
+  <div class="control-group">
+    <label class="control-label" for="inputName">Name</label>
+    <div class="controls">
+      <input type="text" name="name" id="inputName" placeholder="Name">
+    </div>
+  </div>
+  <div class="control-group">
+    <div class="controls">
+      @*<label class="checkbox">
+        <input type="checkbox"> Remember me
+      </label>*@
+      <button type="submit" class="btn">Add</button>
+    </div>
+  </div>
+</form>
+

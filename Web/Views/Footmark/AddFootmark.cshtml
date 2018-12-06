@@ -1,0 +1,35 @@
+﻿@model ViewModel.ProjectVM
+@{
+    ViewBag.Title = "AddFootmark";
+}
+
+<h2>AddFootmark</h2>
+
+<br />
+<hr />
+
+<form class="form-horizontal" action="/footmark/doaddfootmark" method="post">
+    @Html.HiddenFor(m => m.ID)
+    <div class="control-group">
+        <label class="control-label" for="inputContent">Content</label>
+        <div class="controls">
+            @*<input type="text" name="name" id="inputName" placeholder="Name">*@
+            <textarea name="content" id="inputContent" rows="3"></textarea>
+        </div>
+    </div>
+    <div class="control-group">
+        <label class="control-label" for="inputMarkTime">MarkTime</label>
+        <div class="controls">
+            <input type="text" id="inputMarkTime" name="marktime" placeholder="yyyy-MM-dd HH:mm:ss">
+        </div>
+    </div>
+    <div class="control-group">
+        <div class="controls">
+            @*<label class="checkbox">
+                  <input type="checkbox"> Remember me
+                </label>*@
+            <button type="submit" class="btn">Login</button>
+        </div>
+    </div>
+</form>
+
