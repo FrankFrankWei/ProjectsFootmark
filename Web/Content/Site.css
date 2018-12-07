@@ -22,3 +22,12 @@ select,
 textarea {
     max-width: 280px;
 }
+
+.inline-head {
+    margin: 20px 20px 20px 0;
+    display: inline-block;
+}
+
+.min150-td {
+    width: 150px;
+}
