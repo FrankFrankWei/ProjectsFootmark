@@ -24,6 +24,9 @@ namespace Web.Controllers
             string name = Request["name"];
             string password = Request["password"];
 
+            if (string.IsNullOrEmpty(name.Trim()) || string.IsNullOrEmpty(password.Trim()))
+                return Content("invalid name/passowrd");
+
             User user = new User { Name = name, Password = password, CreateTime = DateTime.Now, Validity = true };
 
             int result = 0;
